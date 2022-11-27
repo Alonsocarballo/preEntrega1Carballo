@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+    <meta charset=”UTF-8″ />
+    <title>preEntrega1Carballo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="forma">
+            <h1>Te financiamos tu Auto</h1>
+            <h2> Como Calcularlo?</h2>
+            <form>
+                <div>
+                    <label for="necesito">Cuanto dinero necesitas? 
+                        <input class="nec" type="number" placeholder="Cuanto dinero necesitas" id="montoPrestamo">
+                    </label>
+                </div>
+                <div>
+                    <label for="numcuotas">En cuantas cuotas deseas pagarlo? 
+                        <input type="number" placeholder="Aqui pon las cuotas" id="numCuotas">
+                    </label>
+                </div>
+                <div>
+                </div>
+            </form>
+            <button id="boton1" onclick="botonCalculo();">CALCULA</button>
+            <table class="tabla">
+                <section>
+                    <tr>
+                        <td>Cuota </td>
+                        <td>Dinero que abonas</td>
+                        <td>Interes que pagas</td>
+                        <td>Total a pagar de la cuota</td>
+                    </tr>
+                </section>
+                <tbody id="tcuerpo">
+                </tbody>
+
+            </table>
+    </div>
+    <button class="boton2" onclick="pedir_prestamo();">Pedir Prestamo</button>
+    <button class="boton3" onclick="pago_cuota();">Paga una cuota</button>
+    <script src="./main.js"></script>
+</body>
+</html>
